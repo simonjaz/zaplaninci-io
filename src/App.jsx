@@ -22,10 +22,25 @@ function App() {
   };
 
   return (
-    <div>
-      <h1 className="title">Zaplaninci_io</h1>
-      <SearchBar onAddFavorite={handleAddFavorite} />
-      <FavoritesGrid favorites={favorites} onRemoveOption={handleRemoveFavorite} />
+    <div className="app-layout">
+      <div className="sidebar">
+        <img
+          src="./avatar.png"
+          alt="Zaplaninci Avatar"
+          className="profile-img"
+          onError={(e) => {
+            e.target.src = 'https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/b7bb7aa4f66a7bfaec0ed556bac2baef.png'
+          }}
+        />
+      </div>
+      <div className="main-content">
+        <h1 className="title">Zaplaninci_io</h1>
+        <SearchBar onAddFavorite={handleAddFavorite} />
+        <FavoritesGrid favorites={favorites} onRemoveOption={handleRemoveFavorite} />
+        <footer className="footer">
+          Designed by Lenart Jazbar
+        </footer>
+      </div>
     </div>
   );
 }
