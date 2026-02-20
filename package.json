@@ -1,6 +1,7 @@
 {
   "name": "zaplaninci-io",
   "private": true,
+  "homepage": "https://simonjaz.github.io/zaplaninci-io",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
